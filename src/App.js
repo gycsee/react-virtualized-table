@@ -9,14 +9,13 @@ const list = List(generateRandomList());
 
 function App() {
   return (
-    <AutoSizer disableHeight>
-      {({ width }) => (
-        <div style={{ width }}>
-          <Table
-            list={list}
-            width={width}
-          />
-        </div>
+    <AutoSizer >
+      {({ width, height }) => (
+        <Table
+          list={list}
+          width={width}
+          height={height}
+        />
       )}
     </AutoSizer>
   );

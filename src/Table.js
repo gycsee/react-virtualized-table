@@ -6,6 +6,7 @@ import styles from './Table.module.css';
 
 const Table = ({
   list,
+  height,
   width,
 }) => {
   const _cache = React.useRef(new CellMeasurerCache({
@@ -79,7 +80,7 @@ const Table = ({
     <VTable
       deferredMeasurementCache={_cache.current}
       headerHeight={40}
-      height={600}
+      height={height}
       overscanRowCount={2}
       rowClassName={styles.tableRow}
       rowHeight={_cache.current.rowHeight}
