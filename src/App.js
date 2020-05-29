@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import { List } from 'immutable';
+import { AutoSizer } from 'react-virtualized';
+
+import Table from './Table';
+import { generateRandomList } from './utils';
 import './App.css';
+
+const list = List(generateRandomList());
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AutoSizer disableHeight>
+        {({ width }) => (
+          <Table
+            list={list}
+            width={width}
+          />
+        )}
+      </AutoSizer>
     </div>
   );
 }
