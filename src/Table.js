@@ -100,6 +100,7 @@ const Table = ({
         width={200}
         dataKey="category"
         label="展示项"
+        headerClassName={styles.tableGridColumn}
         className={styles.tableGridColumn}
         cellRenderer={_columnCellRenderer}
       />
@@ -107,6 +108,7 @@ const Table = ({
         width={200}
         dataKey="date1"
         label="yyyy/mm"
+        headerClassName={styles.tableGridColumn}
         className={styles.tableGridColumn}
         cellRenderer={_columnCellRenderer}
       />
@@ -114,6 +116,7 @@ const Table = ({
         width={200}
         dataKey="date2"
         label="yyyy/mm"
+        headerClassName={styles.tableGridColumn}
         className={styles.tableGridColumn}
         cellRenderer={_columnCellRenderer}
       />
@@ -121,6 +124,7 @@ const Table = ({
         width={200}
         dataKey="date3"
         label="yyyy/mm"
+        headerClassName={styles.tableGridColumn}
         className={styles.tableGridColumn}
         cellRenderer={_columnCellRenderer}
       />
@@ -128,6 +132,7 @@ const Table = ({
         width={200}
         dataKey="date4"
         label="yyyy/mm"
+        headerClassName={styles.tableGridColumn}
         className={styles.tableGridColumn}
         cellRenderer={_columnCellRenderer}
       />
@@ -135,6 +140,7 @@ const Table = ({
         width={200}
         dataKey="date5"
         label="yyyy/mm"
+        headerClassName={styles.tableGridColumn}
         className={styles.tableGridColumn}
         cellRenderer={_columnCellRenderer}
       />
