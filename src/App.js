@@ -4,22 +4,21 @@ import { AutoSizer } from 'react-virtualized';
 
 import Table from './Table';
 import { generateRandomList } from './utils';
-import './App.css';
 
 const list = List(generateRandomList());
 
 function App() {
   return (
-    <div className="App">
-      <AutoSizer disableHeight>
-        {({ width }) => (
+    <AutoSizer disableHeight>
+      {({ width }) => (
+        <div style={{ width }}>
           <Table
             list={list}
             width={width}
           />
-        )}
-      </AutoSizer>
-    </div>
+        </div>
+      )}
+    </AutoSizer>
   );
 }
 

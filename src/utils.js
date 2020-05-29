@@ -19,6 +19,13 @@ export function generateRandomList() {
       random,
       randomLong: randoms.join(' '),
       size: ROW_HEIGHTS[Math.floor(Math.random() * ROW_HEIGHTS.length)],
+      category: ['实际累计销量', '预计销量', '销售员提报值', '指挥长提报值', '预测修改值'],
+      date1: ['100', '000', '000', '000', '000'],
+      date2: ['', '000', '000', '', '000'],
+      date3: ['100', '000', '000', '000', '000'],
+      date4: ['', '000', '', '000', '000'],
+      date5: ['100', '000', '', '', '000'],
+      date6: ['', '000', '', '000', ''],
     });
   }
 
